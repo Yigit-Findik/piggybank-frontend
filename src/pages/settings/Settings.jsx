@@ -81,6 +81,7 @@ function Settings() {
                                 Account naam
                                 <div>
                                     <input
+                                        data-cy="accountName"
                                         value={accountName}
                                         onChange={(e) => setAccountName(e.target.value)}
                                         type="text"
@@ -96,7 +97,7 @@ function Settings() {
 
                     {/* Submit form */}
                     <div className="form-row">
-                        <button type="submit">Opslaan</button>
+                        <button data-cy="settingsButton" type="submit">Opslaan</button>
                     </div>
                 </form>
             </div>

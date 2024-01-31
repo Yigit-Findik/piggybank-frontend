@@ -118,7 +118,7 @@ function Transfer() {
                     <div className="form-row">
                         <label>
                             Van rekening
-                            <select
+                            <select data-cy="senderAccount"
                                 name="account"
                                 value={senderAccountId}
                                 onChange={(e) => setSenderAccountId(e.target.value)}>
@@ -131,7 +131,7 @@ function Transfer() {
                     <div className="form-row">
                         <label>
                             Naar rekening
-                            <select
+                            <select data-cy="receiverAccount"
                                 required
                                 name="toaccount"
                                 value={receiverAccountId}
@@ -156,7 +156,7 @@ function Transfer() {
                             <label htmlFor="amount" className="amount-input-label">
                                 Bedrag
                                 <div>
-                                    <select
+                                    <select data-cy="cy-currency"
                                         className="transfer__currency"
                                         required
                                         name="currency"
